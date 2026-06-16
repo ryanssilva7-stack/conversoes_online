@@ -1,18 +1,24 @@
+const COTACAO_DOLAR = 5.00;
 
-function converter_min_pra_seg() {
-    const inputMinutos = document.getElementById('minutosInput');
-    const resultadoSegundos = document.getElementById('segundosResult');
-    
-    const minutos = parseFloat(inputMinutos.value);
-    
-    if (isNaN(minutos)) {
-        resultadoSegundos.textContent = "0 s";
+function converter_dolar_pra_real() {
+    const inputDolar = document.getElementById("dolaresInput");
+    const resultadoReal = document.getElementById("reaisResult");
+
+    const valorDolar = parseFloat(inputDolar.value);
+
+    if (isNaN(valorDolar) || valorDolar < 0) {
+        resultadoReal.innerText = "R$ 0,00";
         return;
     }
 
-    const segundos = minutos * 60;
-    
-    resultadoSegundos.textContent = `${segundos} s`;
+    const valorReal = valorDolar * COTACAO_DOLAR;
+
+    const valorFormatado = valorReal.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+
+    resultadoReal.innerText = valorFormatado;
 }
 
 function irParaPagina1() {
