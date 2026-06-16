@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Tempo - Min para Seg</title>
+    <link rel="stylesheet" href="pagina_4.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="main-title">Conversões Online</h1>
+        
+        <div class="converter-box">
+            <div class="page-badge">Feito por: Bryan</div>
+            <h2>Conversão de Tempo</h2>
+            <p class="subtitle">(Minutos para Segundos)</p>
+
+            <div class="input-group">
+                <label for="minutosInput">Valor em Minutos (min)</label>
+                <input type="number" id="minutosInput" placeholder="Ex: 5" oninput="converterMinutosParaSegundos()">
+            </div>
+
+            <div class="result-display">
+                <div class="result-label">Resultado em Segundos:</div>
+                <div class="result-value" id="segundosResult">0 s</div>
+            </div>
+
+            <div class="navigation-area">
+                <p>Navegar pelas páginas:</p>
+                <div class="btn-grid">
+                    <button class="btn-nav active" onclick="irParaPagina3()">🪙 Moedas</button>
+                    <button class="btn-nav active" onclick="irParaInicio()">📏 Centimetros e Metros</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="pagina_4.js"></script>
+</body>
+</html>

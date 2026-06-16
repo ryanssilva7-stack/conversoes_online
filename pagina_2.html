@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura - K para °C</title>
+    <link rel="stylesheet" href="pagina_2.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="main-title">Conversões Online</h1>
+        
+        <div class="converter-box">
+            <div class="page-badge">Feito por: Bryan</div>
+            <h2>Conversão de Temperatura</h2>
+            <p class="subtitle">(Kelvin para Celsius)</p>
+
+            <div class="input-group">
+                <label for="kelvinInput">Temperatura em Kelvin (K)</label>
+                <input type="number" id="kelvinInput" placeholder="Ex: 300" oninput="converterKelvinParaCelsius()">
+            </div>
+
+            <div class="result-display">
+                <div class="result-label">Resultado em Celsius:</div>
+                <div class="result-value" id="celsiusResult">0 °C</div>
+            </div>
+
+            <!-- Navegação entre as páginas do sistema -->
+            <div class="navigation-area">
+
+                <div class="btn-grid">
+                    <button class="btn-nav active" onclick="irParaPagina1()">📌 Unidades</button>
+                    <button class="btn-nav active" onclick="irParaPagina3()">🪙 Moedas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="pagina_2.js"></script>
+</body>
+</html>

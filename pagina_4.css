@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top right, #250930 0%, #07020f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #b85cdb 0%, #f74c72 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+    filter: drop-shadow(0 2px 8px rgba(184, 92, 219, 0.2));
+}
+
+.converter-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    position: relative;
+    animation: surgimentoCard 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.page-badge {
+    position: absolute;
+    top: -12px;
+    left: 30px;
+    background: linear-gradient(135deg, #b85cdb 0%, #f74c72 100%);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(184, 92, 219, 0.3);
+}
+
+h2 {
+    margin: 10px 0 5px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 25px 0;
+    font-size: 0.95rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    color: #b85cdb;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group input {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #b85cdb;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(184, 92, 219, 0.2);
+}
+
+.result-display {
+    background: rgba(184, 92, 219, 0.04);
+    border: 1px solid rgba(184, 92, 219, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 5px;
+}
+
+.result-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #f74c72;
+    text-shadow: 0 0 10px rgba(247, 76, 114, 0.3);
+}
+
+.navigation-area {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 20px;
+}
+
+.navigation-area p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 12px 0;
+}
+
+.btn-grid {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-nav {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-nav.active {
+    border-color: #b85cdb;
+    color: #b85cdb;
+}
+
+.btn-nav.active:hover {
+    background: rgba(184, 92, 219, 0.1);
+    transform: translateY(-2px);
+}
+
+@keyframes surgimentoCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
