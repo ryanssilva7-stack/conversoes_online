@@ -1,4 +1,4 @@
-const COTACAO_DOLAR = 5.00;
+const COTACAO_DOLAR = 5.10;
 
 function converter_dolar_pra_real() {
     const inputDolar = document.getElementById("dolaresInput");
