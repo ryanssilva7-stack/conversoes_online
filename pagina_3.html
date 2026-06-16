@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversões de Tempo</title>
+    <link rel="stylesheet" href="pagina_3.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="main-title">Conversões Online</h1>
+        
+        <div class="converter-box">
+            <h2>Conversor de Tempo</h2>
+            <p class="subtitle">(minutos para segundos)</p>
+
+            <div class="input-group">
+                <label for="minutosInput">Tempo em minutos</label>
+                <input type="number" id="minutosInput" placeholder="Ex: 300" oninput="converter_min_pra_seg()">
+            </div>
+
+            <div class="result-display">
+                <div class="result-label">Resultado em segundos:</div>
+                <div class="result-value" id="segundosResult">0s</div>
+            </div>
+
+            <div class="navigation-area">
+
+                <div class="btn-grid">
+                    <button class="btn-nav active" onclick="irParaPagina1()">🪙 Unidades</button>
+                    <button class="btn-nav active" onclick="irParaPagina2()">🌡️ temperatura</button>
+                    <button class="btn-nav active" onclick="irParaPagina4()">⏰ Tempo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="pagina_3.js"></script>
+</body>
+</html>
