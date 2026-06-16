@@ -16,7 +16,7 @@ function converter_min_pra_seg() {
 }
 
 function irParaPagina1() {
-    window.location.href = "pagina_1.html";
+    window.location.href = "index.html";
 }
 
 function irParaPagina2() {
